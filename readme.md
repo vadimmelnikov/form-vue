@@ -1,12 +1,16 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
+1. git clone ....
+2. cd into Vue-Forms folder
+3. run composer install. i.e ~/Vue-Forms$ composer install
+This installs the vendor folder and other packages which are not included in above repository
+4. run npm install
+5. create a .env file in Vue-Forms folder
+6. copy and paste contents .env.example into .env file
+7. Edit database details in .env file if required.
+8. run php artisan key:generate
+This creates the APP_KEY in the .env file which is missing.
+9. run php artisan config:clear
+10. run php artisan migrate
+This creates the necessary tables in the SQL database.
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
